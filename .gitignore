@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Data (large files)
+data/sample/*.csv
+data/sample/*.parquet
+
+# Model artifacts (regenerate with train.py)
+artifacts/*.pt
+artifacts/*.pkl
+artifacts/*.json
+
+# Environment
+.env
+.env.*
+
+# Docker
+.dockerignore
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+*.swp
