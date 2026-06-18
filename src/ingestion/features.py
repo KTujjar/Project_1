@@ -54,7 +54,10 @@ def sliding_windows(
     start_indices = np.array(list(indices))
     return windows, start_indices
 
-
+"""
+Normalizes values into the range 0.0 to 1.0 so the values are
+not on wildly different scales.
+"""
 class Normalizer:
     """MinMaxScaler wrapper that saves/loads its state alongside model artifacts."""
 
@@ -94,6 +97,12 @@ class Normalizer:
         return obj
 
 
+"""
+Splitting data into three buckets:
+    training - what the model learns from
+    validation - used during training to check if the model is overfitting
+    test - locked away until the very end; the final honest score
+"""
 def time_split(
     df: pd.DataFrame,
     train_frac: float = 0.70,
