@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: anomaly-api-config
+data:
+  DATASET: "univariate"
+  ARTIFACT_DIR: "/app/artifacts"
