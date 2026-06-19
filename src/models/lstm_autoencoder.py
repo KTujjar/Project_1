@@ -21,7 +21,7 @@ import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader, TensorDataset
 
-
+"""LSTM neural network model that trains based on data to find anomolies"""
 class LSTMAutoencoder(nn.Module):
     def __init__(
         self,

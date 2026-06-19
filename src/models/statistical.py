@@ -19,7 +19,7 @@ import numpy as np
 import pandas as pd
 from scipy.stats import norm
 
-
+"""model that statistically finds anomolies based on previous data"""
 class EWMADetector:
     """
     Per-feature EWMA detector. Works on both univariate (single column) and
